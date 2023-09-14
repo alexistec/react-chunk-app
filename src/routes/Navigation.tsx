@@ -6,6 +6,7 @@ import {
   } from 'react-router-dom';
   
   import logo from '../logo.svg';
+import { ShoppingPage } from '../components-patterns/pages/ShoppingPage';
   
   export const Navigation = () => {
     return (
@@ -65,7 +66,7 @@ import {
               renders the first one that matches the current URL. */}
           <Routes>
             <Route path="/about" element={<h1>About</h1>} />
-            <Route path="/users" element={<h1>Users</h1>} />
+            <Route path="/users" element={<ShoppingPage/>} />
             <Route path="/" element={<h1>Home</h1>} />
           </Routes>
         </div>
